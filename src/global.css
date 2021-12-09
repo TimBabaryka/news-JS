@@ -9,26 +9,61 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) { 
+
+    header h1 {
+    font-size: 30px;
+    };
+}
+
+h1 {
+    color: #fff;
+    font-size: 92px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right,#095fab 10%, #25abe8 50%, #57d75b 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+
+@keyframes textclip {
+to {
+    background-position: 200% center;
+}
 }
 
 footer {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 footer .copyright {
     font-size: 14px;
-    color: #333;
+    color: #70d6ff;
     text-align: center;
 }
 footer .copyright a {
-    color: #444;
+    color: #70d6ff;
 }
 footer .copyright a:hover {
-    color: #555;
+    color: rgb(0, 231, 31);
 }
 footer .copyright:before {
     content: '©';
