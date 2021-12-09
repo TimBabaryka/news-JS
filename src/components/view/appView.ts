@@ -1,7 +1,8 @@
 import News from './news/news';
 import Sources from './sources/sources';
 
-import {Article,DataSource,DataNews} from '../view/options';
+import {Article,DataSource,DataNews} from './options';
+
 
 
 interface IDataNews{

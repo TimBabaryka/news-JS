@@ -20,7 +20,8 @@ export class App {
     start():void {
 
         
-        (document.querySelector('.sources')as HTMLDivElement).addEventListener('click', (e:Event) => this.controller.getNews(e, (data) => this.view.drawNews(data)));
+        (document.querySelector('.sources')as HTMLDivElement)
+            .addEventListener('click', (e:Event) => this.controller.getNews(e, <DataNews>(data:DataNews) => this.view.drawNews(data)));
         this.controller.getSources((data) => this.view.drawSources(data));
         
     }

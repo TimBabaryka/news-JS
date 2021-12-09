@@ -11,8 +11,8 @@
 
 export interface DataNews {
     
-    sources:Array<DataSource>
-    status:string;
+    // sources:Array<DataSource>
+    status?:string;
     totalResults:number;
     articles: Array<Text>;
 }

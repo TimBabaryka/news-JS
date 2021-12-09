@@ -5,6 +5,9 @@ import {DataSource} from '../view/options';
 import {Article} from '../view/options';
 import {Text} from '../view/options';
 
+
+
+
 class AppController extends AppLoader {
     getSources( callback:<DataSource>(data: DataSource)=>void) {
         super.getResp(
