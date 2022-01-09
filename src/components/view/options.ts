@@ -14,15 +14,15 @@ export interface DataNews {
     // sources:Array<DataSource>
     status?:string;
     totalResults:number;
-    articles: Array<Text>;
+    articles?:Text[];
 }
 
 export interface DataSource{
    status?:string;
-   sources:Array<Article>;
+   sources?:Article[];
 }
 
-export type Article ={
+export type Article = {
     category: string;
     country:string;
     description:string;
