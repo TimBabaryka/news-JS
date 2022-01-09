@@ -8,13 +8,24 @@
     font: 300 1em 'Fira Sans', sans-serif;
 }
 
+
+.iconSize {
+    color: #70d6ff;
+    font-size: 1em;
+
+}
+
+.iconSize:hover{
+    color: #3fcc59;
+}
+
 .source__item {
     background: none;
     border: 2px solid #30c5ff;
     font: inherit;
     line-height: 1;
     margin: 0.5em;
-    padding: 1em 2em;
+    padding: 2em 2em;
     color: #70d6ff;
     transition: 0.25s;
     cursor: pointer;
